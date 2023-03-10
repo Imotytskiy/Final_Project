@@ -3,7 +3,8 @@
 
 .container {
   max-width: 1440px;
-  height: 2118px;
+  min-width: 735px;
+  height: auto;
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   border-radius: 0px 0px 12px 12px;
   font-family: "Roboto", sans-serif; }
@@ -18,6 +19,7 @@
 
 .menu-up {
   display: flex;
+  flex-wrap: nowrap;
   direction: row;
   align-items: center;
   gap: 6px; }
@@ -44,7 +46,8 @@
   line-height: 20px; }
 
 ul {
-  text-align: right;
+  text-align: righ;
+  padding-inline-start: 0px;
   z-index: 1; }
 
 li {
@@ -71,7 +74,7 @@ a:hover {
 .symbol {
   position: relative;
   text-align: center;
-  margin-top: -200px; }
+  margin-top: -170px; }
 
 .headtwo {
   font-family: "Montserrat";
@@ -98,6 +101,106 @@ a:hover {
 .button_scroll {
   display: block;
   position: relative;
-  text-decoration: none; }
+  text-decoration: none;
+  background: unset;
+  padding: 20px; }
+
+.button_scroll:hover {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  background: unset;
+  padding: 20px;
+  background: unset; }
+
+.flexcake {
+  display: inline-flex;
+  gap: 20px;
+  align-items: center; }
+
+.text-chief {
+  margin: 0 0 50px;
+  font-size: 35px;
+  line-height: 50px;
+  font-weight: 600;
+  border-right: 1px solid #000;
+  margin-top: 45px;
+  margin-left: 80px;
+  padding-right: 90px; }
+
+.consistent {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-direction: inline;
+  text-align: center;
+  padding: 0px 0px 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 460px;
+  margin-right: 60px; }
+
+.consistent > ul > li {
+  display: block;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  text-align: right;
+  color: #B3B3BA; }
+
+.consistent > ul > li:first-child {
+  color: #F0145A; }
+
+.consistent > ul > li:hover {
+  color: #F0145A; }
+
+h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  color: #FFFFFF; }
+
+.line {
+  display: block;
+  padding-left: 40px;
+  border-left-style: solid;
+  border-left-color: rgba(255, 255, 255, 0.3);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  text-align: left; }
+
+h3 {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  color: #f0145a;
+  margin-left: 60px;
+  margin-right: 60px; }
+
+.cards {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 60px; }
+
+h4 {
+  color: #24A3FF;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px; }
 
 /*# sourceMappingURL=style.css.map */
