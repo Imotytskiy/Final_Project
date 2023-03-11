@@ -322,12 +322,10 @@ h5 {
 .hillel {
   background: #1C4280;
   height: 120px;
-  width: calc(25% - 10px); }
+  width-min: 250px; }
 
 .img-logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+  display: block;
+  margin: 36px 71px; }
 
 /*# sourceMappingURL=style.css.map */
