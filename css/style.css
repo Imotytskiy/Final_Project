@@ -273,6 +273,9 @@ h4 {
   background: #E7E7F2;
   border-radius: 0px 0px 12px 12px; }
 
+.arrow-right-partner-margin-top {
+  margin: 30px 0 0 0; }
+
 .main-partner {
   display: flex;
   flex-direction: row;
@@ -295,8 +298,19 @@ h4 {
   font-size: 38px;
   line-height: 46px; }
 
-.arrow-right-partner-margin-top {
-  margin: 30px 0 0 0; }
+.autor {
+  display: block;
+  color: #B3B3BA;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 30px; }
+
+.autor.plus {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px; }
 
 .third {
   max-width: max-content;
