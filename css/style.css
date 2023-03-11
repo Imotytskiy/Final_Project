@@ -1,56 +1,356 @@
-/*
-Error: Invalid CSS after "": expected selector, was "}"
-        on line 6 of D:\Final_Project\sass\style.sass
+* {
+  box-sizing: content-box; }
 
-1: *
-2:     box-sizing: content-box
-3: @font-face {
-4:     font-family: 'Montserrat'
-5:     src: url(./fonts/Montserrat-VariableFont_wght.ttf)
-6: }
-7: body
-8:     font-family: 'Montserrat','Roboto', sans-serif
-9: .container
-10:     max-width: max-content
-11:     min-width: 735px
+@font-face {
+  font-family: "Montserrat";
+  src: url(./fonts/Montserrat-VariableFont_wght.ttf); }
+.container {
+  max-width: max-content;
+  min-width: 735px;
+  height: auto;
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  border-radius: 0px 0px 12px 12px;
+  font-family: "Roboto", sans-serif; }
 
-Backtrace:
-D:\Final_Project\sass\style.sass:6
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1188:in `expr!'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/static_parser.rb:20:in `parse_selector'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-D:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-D:/Program Files (x86)/Koala/bin/sass:22:in `load'
-D:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"\": expected selector, was \"}\"\A         on line 6 of D:\Final_Project\sass\style.sass\A \A 1: *\A 2:     box-sizing: content-box\A 3: @font-face {\A 4:     font-family: 'Montserrat'\A 5:     src: url(./fonts/Montserrat-VariableFont_wght.ttf)\A 6: }\A 7: body\A 8:     font-family: 'Montserrat','Roboto', sans-serif\A 9: .container\A 10:     max-width: max-content\A 11:     min-width: 735px"; }
+.menu {
+  z-index: 1; }
+
+.logo_menu {
+  padding: 50px 0 0 0;
+  margin: 0 60px 0 60px;
+  display: flex;
+  flex-grow: block;
+  justify-content: space-between;
+  align-content: center; }
+
+.menu-up {
+  display: flex;
+  flex-wrap: nowrap;
+  direction: row;
+  align-items: center;
+  gap: 6px; }
+
+.change-lang {
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 5px 7px 5px 7px; }
+
+.change-lang:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+  background: #F0145A;
+  border-radius: 8px;
+  padding: 5px 7px 5px 7px; }
+
+.menu-lang-adress {
+  list-style-type: none;
+  display: inline-block;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px; }
+
+.menu-lang-adress-tel {
+  font-weight: 700;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: center; }
+
+.main-menu {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF; }
+
+.middle-line {
+  color: #FFFFFF;
+  text-decoration-line: none;
+  position: relative;
+  display: block;
+  padding-bottom: 7px;
+  transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in; }
+
+.middle-line:hover {
+  color: #F0145A; }
+
+.middle-line:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #F0145A;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: color 0.1s, transform 0.2s ease-out; }
+
+.middle-line:hover:before {
+  transform-origin: left top;
+  transform: scale(1, 1); }
+
+.middle-line:focus:before {
+  transform-origin: left top;
+  transform: scale(1, 1); }
+
+.arrow_right {
+  display: block;
+  color: #24A3FF;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0 60px;
+  font-family: "Montserrat"; }
+
+span {
+  color: #E6E6F0; }
+
+.symbol {
+  position: relative;
+  text-align: center;
+  margin-top: -170px; }
+
+.headtwo {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: -440px; }
+
+.scroll_red {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -60px;
+  background-image: url("/img/Scroll.svg");
+  width: 42px;
+  height: 42px; }
+
+.scroll_red:hover {
+  background-image: url("/img/Scroll_Red.svg"); }
+
+.button_scroll {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  background: unset;
+  padding: 20px; }
+
+.button_scroll:hover {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  background: unset;
+  padding: 20px;
+  background: unset; }
+
+.flexcake {
+  display: inline-flex;
+  gap: 20px;
+  align-items: center; }
+
+.text-chief {
+  margin: 0 0 50px;
+  font-size: 35px;
+  line-height: 50px;
+  font-weight: 600;
+  border-right: 1px solid #000;
+  margin-top: 45px;
+  margin-left: 80px;
+  padding-right: 90px; }
+
+.consistent {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-direction: inline;
+  text-align: center;
+  padding: 0px 0px 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 460px;
+  margin-right: 60px; }
+
+.consistent > ul > li {
+  display: block;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  text-align: right;
+  color: #B3B3BA; }
+
+.consistent > ul > li:first-child {
+  background-image: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent; }
+
+.consistent > ul > li:hover {
+  color: #F0145A; }
+
+h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  color: #FFFFFF; }
+
+.line {
+  display: block;
+  padding-left: 40px;
+  border-left-style: solid;
+  border-left-color: rgba(255, 255, 255, 0.3);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  text-align: left; }
+
+h3 {
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  font-size: 38px;
+  line-height: 46px;
+  color: #f0145a;
+  font-family: "Montserrat";
+  margin-left: 60px;
+  margin-right: 60px; }
+
+.cards {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0 60px 60px 60px; }
+  .cards span {
+    font-family: "Montserrat"; }
+  .cards > div:first-child {
+    flex: 1 0 100%;
+    width: auto; }
+  .cards.cards > div {
+    width: 370px; }
+
+h4 {
+  color: #24A3FF;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  font-family: "Montserrat"; }
+
+.second-container {
+  max-width: max-content;
+  min-width: 735px;
+  margin: 0 60px; }
+
+.before-background {
+  position: relative;
+  text-align: center;
+  margin: 0 20px;
+  padding-bottom: 10px;
+  background: #CACADB;
+  border-radius: 0px 0px 12px 12px; }
+
+.before-background-second {
+  position: relative;
+  text-align: center;
+  margin: 0 40px;
+  padding-bottom: 10px;
+  background: #E7E7F2;
+  border-radius: 0px 0px 12px 12px; }
+
+.arrow-right-partner-margin-top {
+  margin: 30px 0 0 0; }
+
+.main-partner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  background: #F5F5FA;
+  border-radius: 12px;
+  gap: 30px; }
+
+.partner-text {
+  display: block;
+  background-color: #F5F5FA;
+  background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px; }
+
+.autor {
+  display: block;
+  color: #B3B3BA;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 30px;
+  font-family: "Montserrat"; }
+  .autorplus {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px; }
+
+.third {
+  max-width: max-content;
+  min-width: 735px;
+  height: auto; }
+
+h5 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323264;
+  text-align: center; }
+
+.companies {
+  display: flex;
+  flex-wrap: wrap;
+  direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch; }
+
+.hillel {
+  background: #1C4280;
+  height: 120px;
+  width-min: 250px; }
+
+.img-logo {
+  display: block;
+  margin: 36px 71px; }
+
+/*# sourceMappingURL=style.css.map */
