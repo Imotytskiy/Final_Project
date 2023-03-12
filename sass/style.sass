@@ -1,3 +1,18 @@
+// $screen-xs:                                         480px;
+// $screen-sm:                                         768px;
+// $screen-md:                                         992px;
+// $screen-lg:                                         1200px;
+// $screen-xl:                                         1400px;
+// $screen-xxl:                                        1600px;
+
+// // QUERIES
+// @media screen (max-width: $screen-lg) {
+//     flex-basis: 25%;
+// }
+
+// @media screen (max-width: $screen-md) {
+//     flex-basis: 33.33%;
+// }
 *
     box-sizing: content-box
 @font-face 
@@ -9,6 +24,8 @@
     height: auto
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%)
     border-radius: 0px 0px 12px 12px
+    margin-left: auto
+    margin-right: auto
     font-family: 'Roboto', sans-serif
 .menu
     z-index: 1
@@ -237,7 +254,9 @@ h4
 .second-container
     max-width: max-content
     min-width: 735px
-    margin: 0 60px
+    margin-left: auto
+    margin-right: auto
+
 .before-background
     position: relative
     text-align: center
@@ -308,10 +327,12 @@ h5
     direction: row
     justify-content: center
     align-items: center
-    align-content: stretch
+    max-width: 1440px
+    margin-left: auto
+    margin-right: auto
 .hillel
     background: #1C4280
-    height: 120px
+    height: 120px  
     & img
         display: block
         margin: 36px 71px 71px
@@ -356,7 +377,7 @@ h5
     height: 120px
     &>img
         display: block
-        margin: 22px 106px
+        margin: 22px 107px
 .tec
     background: #EAEAEA 
     height: 120px
@@ -385,14 +406,74 @@ h5
     max-width: max-content
     min-width: 735px
     margin: auto
+    background: #F5F5FA
 .info
     display: flex
     justify-content: center
     flex-wrap: wrap
     gap: 20px
-    & div
+    margin-block-start: 0
+    margin-block-end: 0
+    padding-inline-start: 0
+    &>div
         flex: 1 100%
-    
+        margin-left: 7%
+.card-size
+    width: 420px
+    border-radius: 8px 
+    background: #FFFFFF
+.card-background
+    background: #FFFFFF
+.card-heading
+    display: block
+    position: relative
+    text-align: left
+    color: #24A3FF
+    margin: 30px 30px 0 30px
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 700
+    font-size: 16px
+    line-height: 20px
+.date-head
+    display: block
+    position: relative
+    text-align: left
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 700
+    font-size: 12px
+    line-height: 15px
+    letter-spacing: 1px
+    margin: 15px 30px 0 30px
+    text-transform: uppercase
+    color: #B3B3BA
+.line-card
+    padding-bottom: 15px
+    border-bottom: 4px solid #E6E6F0
+    font-style: normal
+.info-card
+    display: block
+    position: relative
+    text-align: stretch
+    margin: 15px 30px 30px 30px
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 22px
+    color: #000000
+.footer-main
+    max-width: max-content
+    min-width: 735px
+    height: auto
+    background: #F5F5FA
+.footer-line
+    border-bottom: 4px solid #E6E6F0
+    margin-left: 60px
+    margin-right: 60px
+    -top: 30px
+        
+
 
 
 
