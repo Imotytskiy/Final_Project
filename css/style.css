@@ -515,13 +515,15 @@ footer {
   background: #F5F5FA;
   padding-bottom: 30px; }
 
+.margin60 {
+  margin-right: 60px;
+  margin-left: 60px; }
+
 .footer-line {
   background: #F5F5FA;
   border-bottom: 4px solid #E6E6F0;
   padding: 15px;
-  content: ""; }
-
-.margin60 {
+  content: "";
   margin-right: 60px;
   margin-left: 60px; }
 
