@@ -509,20 +509,28 @@ h5 {
   line-height: 22px;
   color: #000000; }
 
+footer {
+  min-width: 735px;
+  height: auto;
+  background: #F5F5FA;
+  padding-bottom: 30px; }
+
 .footer-line {
+  background: #F5F5FA;
   border-bottom: 4px solid #E6E6F0;
-  margin-left: 60px;
-  margin-right: 60px;
   padding: 15px;
   content: ""; }
+
+.margin60 {
+  margin-right: 60px;
+  margin-left: 60px; }
 
 .flex-footer {
   display: flex;
   direction: row;
   justify-content: space-between;
-  margin-right: 60px;
-  margin-left: 60px;
-  margin-top: 30px; }
+  margin-top: 30px;
+  margin-bottom: 21px; }
 
 .copyright {
   color: #B3B3BA;
@@ -530,7 +538,15 @@ h5 {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px; }
+  line-height: 20px;
+  margin-right: 60px; }
+
+.color-adr {
+  color: #323264;
+  margin-left: 60px; }
+
+.color-tel {
+  color: #46466E; }
 
 .map {
   font-family: "Montserrat";
@@ -540,6 +556,12 @@ h5 {
   line-height: 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  color: #24A3FF; }
+
+.mail {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
   color: #24A3FF; }
 
 /*# sourceMappingURL=style.css.map */
