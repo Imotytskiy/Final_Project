@@ -71,10 +71,6 @@
     font-size: 16px
     display: inline-block
     vertical-align: center
-// svg:hover
-//     fill: #F0145A
-// rect:hover
-//     fill: #F0145A
 path:hover
     fill: #F0145A
 .main-menu
@@ -522,3 +518,94 @@ footer
     font-size: 16px
     line-height: 20px
     color: #24A3FF
+//contact page
+.container-contact-page
+    max-width: 1440px
+    min-width: 735px
+    background: #FFFFFF
+    border-radius: 0px 0px 12px 12px
+    margin-left: auto
+    margin-right: auto
+    font-family: 'Roboto', sans-serif
+.logo_menu-contact
+    padding: 50px 0 0 0
+    margin: 0 60px 0 60px
+    display: flex
+    flex-grow: block
+    justify-content: space-between
+    align-content: center
+    color: #B3B3BA
+.menu-up-contact
+    display: flex
+    flex-wrap: nowrap
+    direction: row
+    align-items: center
+    gap: 6px
+.change-lang-contact-contact
+    text-decoration: none
+    color: #B3B3BA
+    padding: 5px 7px 5px 7px
+.default-lang-contact:before
+    background: #F0145A
+    border-radius: 8px
+    padding: 5px 7px 5px 7px
+.change-lang-contact:focus
+    background: #F0145A
+    border-radius: 8px
+    padding: 5px 7px 5px 7px
+.change-lang-contact:hover
+    background: rgba(255, 255, 255, 0.2)
+    border-radius: 8px
+    padding: 5px 7px 5px 7px
+.menu-lang-adress-contact
+    list-style-type: none
+    display: inline-block
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 20px
+.menu-lang-adress-tel-contact
+    font-weight: 700
+    font-size: 16px
+    display: inline-block
+    vertical-align: center
+path:hover
+    fill: #F0145A
+.main-menu-contact
+    display: inline-block
+    vertical-align: middle
+    margin-left: 15px
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 700
+    font-size: 16px
+    line-height: 20px
+    color: #FFFFFF
+.middle-line-contact
+    color: #FFFFFF
+    text-decoration-line: none
+    position: relative
+    display: block
+    padding-bottom: 7px
+    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in
+.middle-line-contact:hover
+    color: #F0145A
+.middle-line-contact:before
+    content: ''
+    display: block
+    position: absolute
+    bottom: 3px
+    left: 0
+    height: 2px
+    width: 100%
+    background-color: #F0145A
+    transform-origin: right top
+    transform: scale(0, 1)
+    transition: color 0.1s,transform 0.2s ease-out
+.middle-line-contact:hover:before
+    transform-origin: left top
+    transform: scale(1, 1)
+.middle-line-contact:focus:before   // last before we can delete and line will not be stay after push the link
+    transform-origin: left top
+    transform: scale(1, 1)
