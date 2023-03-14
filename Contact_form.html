@@ -111,8 +111,8 @@
                             <li class="menu-lang-adress-contact"><a class="change-lang-contact" href="#">EN</a></li>
                         </ul>
                         <div>
-                            <span class="menu-lang-adress">&#9679;&nbsp;Kyiv, Mechnikova str, 14/1&nbsp;&#9679;</span>
-                            <span class="menu-lang-adress-tel-contact" > 0800 211 927 &#9679; </span>
+                            <span class="menu-lang-adress-contact color-contact"> <span> &#9679;</span> &nbsp;Kyiv, Mechnikova str, 14/1&nbsp; <span> &#9679; </span></span>
+                            <span class="menu-lang-adress-tel-contact color-contact" > 0800 211 927 <span> &#9679;</span> </span>
                         </div>
                         <div>  
                             <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -130,29 +130,45 @@
                 </nav>
             </header>
     </header>
-      <form action="/"> 
+    <section class="contact-page">
+      <div class="contact-adress">
+         <span class="contact-text-item">Kyiv, <br>
+          Mechnikova str, 14
+          <div class="footer-line-contact">
+          </div>
+        </span>
+
+        <span class="contact-text-item">0800 211 927
+          contact@forstudy.space <br>
+          <div class="footer-line-contact">
+          </div>
+        </span>
+      <a href="#"><img src="./icons/Facebook.svg" alt=""></a>
+      </div>
+<form class="form-contact-page" action="/"> 
         <h1>We would like to help you</h1>
         <div>   
             <input type="text" name="name" placeholder="Name">
             <textarea placeholder="Message" rows="4"></textarea>
-        <p class="answer">How to answer you?</p>
+          <p class="answer">How to answer you?</p>
           <input type="tel" name="name" placeholder="Phone number">
           <input type="email" name="name" placeholder="Email">
         </div>
         <button type="submit" href="/">Send message</button>
       </form>
     </div>
+  </section>
     <footer>
         <div class="flex-footer">
-            <span class="menu-lang-adress color-adr">Kyiv, Mechnikova str, 14/1&nbsp;● <span class="map">on map</span></span>
-            <span class="copyright">© 2021 HLEGAL Law company, LLC</span>
+            <span class="color-adr-contact menu-lang-adress color-contact">Kyiv, Mechnikova str, 14/1&nbsp;● <span class="map">on map</span></span>
+            <span class="color-adr-contact copyright">© 2021 HLEGAL Law company, LLC</span>
         </div>
         <div class="menu-up margin60">
             <div>  
                 <img src="./icons/facebook-blue-logo.svg" alt="logo facebook">
             </div>
             <div>
-               <span class="menu-lang-adress-tel color-tel"> 0800 211 927 &#9679;</span>
+               <span class="menu-lang-adress-tel color-tel-contact"> 0800 211 927 &#9679;</span>
                <span class="map">contact@forstudy.space</span>
            </div>
            </div>

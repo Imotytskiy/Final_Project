@@ -594,15 +594,16 @@ footer {
   align-items: center;
   gap: 6px; }
 
-.change-lang-contact-contact {
+.change-lang-contact {
   text-decoration: none;
   color: #B3B3BA;
   padding: 5px 7px 5px 7px; }
 
-.default-lang-contact:before {
-  background: #F0145A;
-  border-radius: 8px;
-  padding: 5px 7px 5px 7px; }
+.change-lang-contact:hover:focus {
+  color: #FFFFFF; }
+
+.change-lang-contact:focus {
+  color: #FFFFFF; }
 
 .change-lang-contact:focus {
   background: #F0145A;
@@ -610,7 +611,7 @@ footer {
   padding: 5px 7px 5px 7px; }
 
 .change-lang-contact:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: #F5F5FA;
   border-radius: 8px;
   padding: 5px 7px 5px 7px; }
 
@@ -641,10 +642,10 @@ path:hover {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF; }
+  color: #24A3FF; }
 
 .middle-line-contact {
-  color: #FFFFFF;
+  color: #24A3FF;
   text-decoration-line: none;
   position: relative;
   display: block;
@@ -652,6 +653,9 @@ path:hover {
   transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in; }
 
 .middle-line-contact:hover {
+  color: #24A3FF; }
+
+.middle-line-contact:focus {
   color: #F0145A; }
 
 .middle-line-contact:before {
@@ -662,7 +666,7 @@ path:hover {
   left: 0;
   height: 2px;
   width: 100%;
-  background-color: #F0145A;
+  background-color: #24A3FF;
   transform-origin: right top;
   transform: scale(0, 1);
   transition: color 0.1s, transform 0.2s ease-out; }
@@ -674,5 +678,39 @@ path:hover {
 .middle-line-contact:focus:before {
   transform-origin: left top;
   transform: scale(1, 1); }
+
+.color-contact {
+  color: #B3B3BA; }
+
+.contact-page {
+  margin-top: 60px;
+  display: flex;
+  direction: row;
+  justify-content: center;
+  gap: 60px; }
+
+.contact-adress {
+  flex-basis: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px; }
+
+.contact-form {
+  flex-basis: auto; }
+
+.contact-text-item {
+  text-align: left;
+  font-size: 21px;
+  line-height: 30px;
+  color: #323264; }
+
+.footer-line-contact {
+  border-bottom: 4px solid #E6E6F0;
+  padding: 20px;
+  content: "";
+  margin-right: 45px; }
+
+.form-contact-page {
+  margin: 0; }
 
 /*# sourceMappingURL=style.css.map */
