@@ -7,14 +7,34 @@
     <link rel="stylesheet" href="./css/style.css">
     <style>
       html, body {
-      min-height: 100%;
+      /* max-width: 650px;
+      max-height: 612px; */
       padding: 0;
       margin: 0;
       font-family: Roboto, Arial, sans-serif;
       font-size: 14px;
       color: #666;
       }
+      /* .modal {
+        display: none;
+        position: fixed;
+        z-index: 8;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      .modal-content {
+        margin: 50px auto;
+        border: 1px solid #999;
+        width: 60%;
+      } */
+    
       h1 {
+      display: inline;
       font-weight: 400;
       background: -webkit-linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
       -webkit-background-clip: text;
@@ -92,13 +112,23 @@
       button:active {
       background: #006CCF;
       }
-          /*footer  */
-          
+      .contact_head{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+      }
+      .btn:hover{
+       background:#E6E6F0;
+       border-radius: 8px;
+      }     
     </style>
   </head>
   <body>
       <form action="/"> 
-        <h1>We would like to help you</h1>
+        <div class="contact_head">
+        <h1>We would like to help you</h1> 
+        <a onclick="window.open('', '_self', ''); window.close();"><img class="btn" src="./icons/Close.svg" alt="button"></a>
+        </div>
         <div>   
             <input type="text" name="name" placeholder="Name">
             <textarea placeholder="Message" rows="4"></textarea>
@@ -109,20 +139,5 @@
         <button type="submit" href="/">Send message</button>
       </form>
     </div>
-    <footer>
-        <div class="flex-footer">
-            <span class="menu-lang-adress color-adr">Kyiv, Mechnikova str, 14/1&nbsp;● <span class="map">on map</span></span>
-            <span class="copyright">© 2021 HLEGAL Law company, LLC</span>
-        </div>
-        <div class="menu-up margin60">
-            <div>  
-                <img src="./icons/facebook-blue-logo.svg" alt="logo facebook">
-            </div>
-            <div>
-               <span class="menu-lang-adress-tel color-tel"> 0800 211 927 &#9679;</span>
-               <span class="map">contact@forstudy.space</span>
-           </div>
-           </div>
-    </footer>
   </body>
 </html>
