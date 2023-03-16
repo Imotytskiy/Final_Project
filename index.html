@@ -87,7 +87,7 @@
                         </svg>
                     </div>
                 </div>
-                <ul>
+                <ul class="no-dropdown">
                     <li class="main-menu"><a class="middle-line" href="#">about us</a></li>
                     <li class="main-menu"><a class="middle-line" href="#">team</a></li>
                     <li class="main-menu"><a class="middle-line" href="#services">services</a></li>
@@ -95,12 +95,28 @@
                     <li class="main-menu"><a class="middle-line" href="./Contact_form.html" target="_parent">contact</a>
                     </li>
                 </ul>
+                  
+                <ul class="dropdown-menu">
+                    <li class="main-menu"><a class="middle-line" href="#">about us</a></li>
+                    <li class="main-menu"><a class="middle-line" href="#">team</a></li>
+                    <li class="main-menu"><a class="middle-line" href="#services">services</a></li>
+                    <li class="main-menu"><a class="middle-line" href="#">publications</a></li>
+                    <li class="main-menu"><a class="middle-line" href="./Contact_form.html" target="_parent">contact</a>
+                  </ul>
+
+
             </nav>
         </header>
         <script type="text/javascript">
         </script>
         <div class="symbol">
-            <img src="./img/Symbol.svg" alt="big H">
+            <picture>
+                <source srcset="./icons/Small_symbol.svg" media="(max-width: 375px)">     
+                <source srcset="./img/Symbol.svg" media="(max-width: 1441px)">
+                <source srcset="./icons/Huge_symbol.svg" media="(min-width: 1442px)">
+                <img srcset="./img/Symbol.svg" alt="…">
+              </picture>
+            <!-- <img src="./img/Symbol.svg" alt="big H"> -->
             <div class="scroll_red">
                 <a class="button_scroll" href="#"></a>
             </div>
@@ -229,8 +245,8 @@
                     <article class="main-partner">
                         <img src="./img/Team-1.jpg" alt="Al">
                         <div>
-                            <span id="services" class="arrow_right arrow-right-partner-margin-top">Команда<img
-                                    src="./icons/Arrow_right.svg" alt=""> </span>
+                            <span id="services" class="arrow_right arrow-right-partner-margin-top"> <a href="#"> Команда<img
+                                    src="./icons/Arrow_right.svg" alt=""></a> </span>
                             <span class="partner-text">Ми звикли брати на себе
                                 відповідальність та завжди гарантуємо
                                 чесну, вчасну допомогу, навіть у

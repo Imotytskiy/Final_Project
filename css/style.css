@@ -306,8 +306,7 @@ h4 {
 
 .partner-text {
   display: block;
-  background-color: #F5F5FA;
-  background-image: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  background-image: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -707,5 +706,40 @@ path:hover {
 
 .form-contact-page {
   margin: 0; }
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer; }
+
+.dropdown:hover.dropdown-menu {
+  display: block; }
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc; }
+
+.dropdown-menu li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none; }
+
+.dropdown-menu li a:hover {
+  background-color: #f6f6f6; }
 
 /*# sourceMappingURL=style.css.map */
