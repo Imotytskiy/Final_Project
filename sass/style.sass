@@ -2,6 +2,7 @@
     box-sizing: content-box
 body
     max-width: 1920px
+    margin: 0 auto
 @font-face 
     font-family: 'Montserrat'
     src: url(./fonts/Montserrat-VariableFont_wght.ttf)
@@ -257,12 +258,10 @@ h3
     margin-right: auto
     & span
         font-family: 'Montserrat'
-    // &>div:first-child 
-    //     flex: 1 0 100%
-    //     width: auto
     &.cards>div
-        min-width: 370px
         max-width: 517px
+        @media (max-width: 1659px)
+            width: 370px
   
 h4
     color: #24A3FF
@@ -303,6 +302,11 @@ h4
     background: #F5F5FA
     border-radius: 12px
     gap: 30px
+        @media (max-width: 1095px)
+            .main-partner
+                background: #F5F5FA
+                border-radius: 12px
+
 .partner-text
     display: block
     background-image: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%)
