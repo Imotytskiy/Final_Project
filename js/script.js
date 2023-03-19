@@ -8,3 +8,4 @@ function closeIt() {
     clearTimeout(timeoutId); // clear the timeout to prevent the popup from showing again
     document.getElementById("hid").style.visibility = "hidden";
 } // hide the popup
+
