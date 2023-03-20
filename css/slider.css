@@ -78,11 +78,15 @@
   .carousel {
     position: relative;
     padding-top: 0px;
-    height: 520px;
+    height: 520px;  
     perspective: 100px;
     margin: 60px;
   }
-  
+  @media (max-width: 1095px) {
+    .carousel {
+      height: 1019px;   } 
+    }
+
   .carousel__viewport {
     position: absolute;
     top: 0;
@@ -185,18 +189,6 @@
   .carousel::before,
   .carousel::after,
   .carousel__prev,
-  /* .carousel__next {
-    position: absolute;
-    top: 0;
-    margin-top: 37.5%;
-    width: 4rem;
-    height: 4rem;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    font-size: 0;
-    outline: 0;
-  } */
-  
   .carousel::before,
   .carousel__prev {
     left: -1rem;
