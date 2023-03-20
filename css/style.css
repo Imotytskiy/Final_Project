@@ -35,6 +35,9 @@ body {
   @media (max-width: 1024px) {
     .logo_menu {
       display: none; } }
+  @media (min-width: 1440px) {
+    .logo_menu {
+      margin: 0 160px 0 160px; } }
 
 .logo_menu_middle {
   display: none; }
@@ -235,6 +238,17 @@ span {
   margin-left: auto;
   margin-right: auto;
   margin-top: 860px; }
+  @media screen and (max-width: 768px) {
+    .consistent {
+      flex-direction: column;
+      gap: 15px; } }
+
+.consistent > ul {
+  white-space: nowrap;
+  overflow-x: auto; }
+
+.consistent > ul > li {
+  display: inline-block; }
 
 .wrapper-cards {
   display: block;
@@ -251,6 +265,11 @@ span {
   line-height: 46px;
   text-align: right;
   color: #B3B3BA; }
+  @media screen and (max-width: 768px) {
+    .consistent > ul > li {
+      text-align: center;
+      display: inline;
+      margin-right: 5px; } }
 
 .consistent > ul > li:first-child {
   background-image: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
@@ -281,6 +300,16 @@ h2 {
   font-size: 19px;
   line-height: 30px;
   text-align: left; }
+  @media screen and (max-width: 768px) {
+    .line {
+      text-align: center;
+      padding-top: 40px;
+      border-top-style: solid;
+      border-top-color: rgba(255, 255, 255, 0.3);
+      margin-left: 60px;
+      margin-right: 60px;
+      padding-left: 0;
+      border-left-style: none; } }
 
 .arrow_right {
   display: block;
