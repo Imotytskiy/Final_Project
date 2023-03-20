@@ -238,7 +238,7 @@ span {
   margin-left: auto;
   margin-right: auto;
   margin-top: 860px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 955px) {
     .consistent {
       flex-direction: column;
       gap: 15px; } }
@@ -265,7 +265,7 @@ span {
   line-height: 46px;
   text-align: right;
   color: #B3B3BA; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 955px) {
     .consistent > ul > li {
       text-align: center;
       display: inline;
@@ -300,7 +300,7 @@ h2 {
   font-size: 19px;
   line-height: 30px;
   text-align: left; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 955px) {
     .line {
       text-align: center;
       padding-top: 40px;
@@ -553,14 +553,20 @@ h5 {
   .info > div {
     flex: 1 100%;
     margin-left: 7%; }
-  @media (max-width: 1024px) and (min-width: 596px) {
-    .info:last-child {
-      flex-basis: 100%; } }
 
 .card-size {
   width: 420px;
   border-radius: 8px;
   background: #FFFFFF; }
+
+@media (max-width: 1300px) and (min-width: 988px) {
+  .extra-width {
+    width: 850px; } }
+
+@media (max-width: 1300px) and (min-width: 988px) {
+  .wide {
+    width: 850px;
+    height: 300px; } }
 
 .card-background {
   background: #FFFFFF; }
