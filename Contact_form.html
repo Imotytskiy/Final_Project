@@ -8,11 +8,15 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
   <style>
-
+    @font-face {
+      font-family: 'Montserrat';
+      src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+    }
+  
     body {
       min-height: 100vh;
       margin: 0 auto;
-      font-family: Roboto, Arial, sans-serif;
+      font-family: Montserrat, Roboto, Arial, sans-serif;
       font-size: 14px;
       color: #666;
     }
@@ -115,7 +119,6 @@
   }
   </style>
 </head>
-
 <body>
   <header>
     <section class="conteiner-contact-page">
@@ -153,6 +156,60 @@
         </nav>
       </header>
   </header>
+
+  <header class="logo_menu_middle">
+    <nav class="menu">
+        <div class="menu-up-contact">
+            <ul>
+                <li class="menu-lang-adress-contact"><a class="change-lang-contact" href="#">УК</a></li>
+                <li class="menu-lang-adress-contact"><a class="change-lang-contact" href="#">РУ</a></li>
+                <li class="menu-lang-adress-contact"><a class="change-lang-contact" href="#">EN</a></li>
+            </ul>
+            <div>
+                <span class="menu-lang-adress-contact">&#9679;&nbsp;Kyiv, Mechnikova str, 14/1&nbsp;&#9679;</span>
+                <span class="menu-lang-adress-tel-contact color-contact"> 0800 211 927 &#9679; </span>
+            </div>
+            <div>
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+                        fill="white" />
+                </svg>
+            </div>
+        </div>
+        <div class="logo">
+          <img src="./icons/Logo-contact-middle.svg" alt="icon logo with contact">
+        </div>
+        <ul class="no-dropdown">
+            <li class="main-menu-contact"><a class="middle-line-contact" href="#">about us</a></li>
+            <li class="main-menu-contact"><a class="middle-line-contact" href="#">team</a></li>
+            <li class="main-menu-contact"><a class="middle-line-contact" href="#services">services</a></li>
+            <li class="main-menu-contact"><a class="middle-line-contact" href="#">publications</a></li>
+            <li class="main-menu-contact"><a class="middle-line-contact" href="./Contact_form.html" target="_parent">contact</a>
+            </li>
+        </ul>
+    </nav>
+</header> 
+<!-- MOBILE RESOLUTION -->
+<header class="logo_menu_mobile">
+<nav class="menu">
+    <div>
+        <div class="first-block-mobile">
+        <ul>
+            <li class="menu-lang-adress-contact"><a class="change-lang-contact" href="#">УК</a></li>
+            <li class="menu-lang-adress-contact"><a class="change-lang-contact" href="#">РУ</a></li>
+            <li class="menu-lang-adress-contact"><a class="change-lang-contact" href="#">EN</a></li>
+        </ul>
+            <div class="menu-lang-adress-contact"><span class="tel">0800 211 927</span></div>
+        </div>
+        <div class="logo">
+        <img src="./icons/Logo-contact-mobile.svg" alt="icon logo with contact">
+            <a href="./burger-page.html"> <img src="./icons/Hamburger.svg" alt="icon for menu">
+            </a>
+        </div>
+</header>
+<!-- MOBILE ROSOLUTION END -->
+
   <section class="contact-page">
     <div class="contact-adress">
       <span class="contact-text-item">Kyiv, <br>

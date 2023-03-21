@@ -93,17 +93,6 @@ body
     background: rgba(255, 255, 255, 0.2)
     border-radius: 8px
     padding: 5px 7px 5px 7px
-// .english-default
-//     background: #F0145A
-//     border-radius: 8px
-//     padding: 5px 7px 5px 7px
-// .english-default:focus
-//     background: #F0145A
-//     border-radius: 8px
-//     padding: 5px 7px 5px 7px
-// .english-default:hover
-//     background: rgba(255, 255, 255, 0.2)
-//     border-radius: 8px
     padding: 5px 7px 5px 7px
 .menu-lang-adress
     list-style-type: none
@@ -660,11 +649,18 @@ footer
     font-weight: 400
     font-size: 16px
     line-height: 20px
+    align-content: center
 .menu-lang-adress-tel-contact
     font-weight: 700
     font-size: 16px
     display: inline-block
-    vertical-align: center
+.tel
+    display: block
+    text-align: center
+    padding-top: 10px
+    color: #B3B3BA
+    font-size: 16px
+    font-weight: 700
 path:hover
     fill: #F0145A
 .main-menu-contact
@@ -714,11 +710,19 @@ path:hover
     direction: row
     justify-content: center
     gap: 60px
+    @media screen and ( max-width: 768px )
+        display: block
 .contact-adress
     flex-basis: auto
     display: flex
     flex-direction: column
     gap: 60px
+    @media screen and ( max-width: 768px )
+        margin-left: 60px
+        margin-right: 60px
+        @media screen and ( max-width: 375px )
+        margin-left: 30px
+        margin-right: 30px
 .contact-form
     flex-basis: auto
 .contact-text-item
@@ -733,6 +737,12 @@ path:hover
     margin-right: 45px
 .form-contact-page
     margin: 0
+    @media screen and ( max-width: 768px )
+        margin-left: 60px
+        margin-right: 60px
+    @media screen and ( max-width: 375px )
+        margin-left: 30px
+        margin-right: 30px
 // drop down menu
 .dropbtn
     background-color: #4CAF50
