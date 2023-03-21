@@ -77,6 +77,16 @@ body
     direction: row
     align-items: center
     gap: 6px
+    &-footer
+        display: flex
+        flex-wrap: nowrap
+        direction: row
+        align-items: center
+        gap: 6px
+        margin-right: 60px
+        margin-left: 60px
+.footer-adress-email
+    padding: 15px
 .change-lang
     text-decoration: none
     color: #FFFFFF
@@ -551,6 +561,18 @@ h5
     font-size: 14px
     line-height: 22px
     color: #000000
+.footer-position
+    @media ( max-width: 1100px  )
+        display: none
+.footer-position-middle
+    @media ( max-width: 1100px  )
+        display: flex
+        justify-content: center
+        flex-direction: column
+        align-items: center
+.footer-position-middle
+    @media ( min-width: 1101px  )
+        display: none
 footer
     height: auto
     background: #F5F5FA
@@ -569,8 +591,8 @@ footer
     display: flex
     direction: row
     justify-content: space-between
-    margin-top: 30px
-    margin-bottom: 21px
+    margin: 60 21 60 60
+
 .copyright
     color: #B3B3BA
     font-family: 'Montserrat'
@@ -710,14 +732,14 @@ path:hover
     direction: row
     justify-content: center
     gap: 60px
-    @media screen and ( max-width: 768px )
+    @media screen and ( max-width: 1100px )
         display: block
 .contact-adress
     flex-basis: auto
     display: flex
     flex-direction: column
     gap: 60px
-    @media screen and ( max-width: 768px )
+    @media screen and ( max-width: 1100px )
         margin-left: 60px
         margin-right: 60px
         @media screen and ( max-width: 375px )
@@ -737,12 +759,16 @@ path:hover
     margin-right: 45px
 .form-contact-page
     margin: 0
-    @media screen and ( max-width: 768px )
+    margin-left: 15px
+    margin-right: 15px
+    @media screen and ( max-width: 1100px )
         margin-left: 60px
         margin-right: 60px
+        margin-top: 40px
     @media screen and ( max-width: 375px )
         margin-left: 30px
         margin-right: 30px
+        margin-top: 40px
 // drop down menu
 .dropbtn
     background-color: #4CAF50
