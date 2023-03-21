@@ -641,6 +641,9 @@ h5 {
     flex-direction: column;
     align-items: center; }
     .footer-position-middle * {
+      margin: 0; }
+    .footer-position-middle :last-child {
+      padding-top: 15px;
       margin: 0; } }
 
 @media (min-width: 1101px) {
