@@ -1,5 +1,8 @@
 *
     box-sizing: content-box
+@mixin center
+    margin-left: auto
+    margin-right: auto
 a
     text-decoration: none
 body
@@ -13,9 +16,8 @@ body
     height: auto
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%)
     border-radius: 0px 0px 12px 12px
-    margin-left: auto
-    margin-right: auto
-    font-family: 'Roboto', sans-serif
+    @include center
+    font-family: 'Montserrat','Roboto', sans-serif
 .logo
     display: flex
     direction: row
@@ -164,9 +166,6 @@ span
     top: 0
     left: 50%
     transform: translateX(-50%)
-    // position: relative
-    // text-align: center
-    // margin-top: -170px
 .headtwo
     font-family: 'Montserrat'
     font-style: normal
@@ -178,8 +177,7 @@ span
     margin-top: -440px
 .scroll_red
     position: relative
-    margin-left: auto
-    margin-right: auto
+    @include center
     margin-top: -60px
     background-image: url('/img/Scroll.svg')
     width: 42px
@@ -219,8 +217,7 @@ span
     flex-direction: inline
     text-align: center
     padding: 0px 0px 60px
-    margin-left: auto
-    margin-right: auto
+    @include center
     margin-top: 860px
     @media screen and ( max-width: 955px )
         flex-direction: column
@@ -237,8 +234,7 @@ span
 //         list-style: none
 .wrapper-cards
     display: block
-    margin-left: auto
-    margin-right: auto
+    @include center
     text-align: center
 .consistent>ul>li
     display: block
@@ -325,8 +321,7 @@ h3
     line-height: 26px   
     text-align: left
     margin-bottom: 60px
-    margin-left: auto
-    margin-right: auto
+    @include center
     & span
         font-family: 'Montserrat'
     &.cards>div
@@ -344,8 +339,7 @@ h4
 .second-container
     max-width: max-content
     min-width: 735px
-    margin-left: auto
-    margin-right: auto
+    @include center
 
 .before-background
     position: relative
@@ -420,8 +414,7 @@ h5
     justify-content: center
     align-items: center
     max-width: 1440px
-    margin-left: auto
-    margin-right: auto
+    @include center
 .hillel
     background: #1C4280
     height: 120px  
@@ -599,7 +592,6 @@ footer
     direction: row
     justify-content: space-between
     margin: 60 21 60 60
-
 .copyright
     color: #B3B3BA
     font-family: 'Montserrat'
@@ -633,8 +625,7 @@ footer
     min-width: 735px
     background: #FFFFFF
     border-radius: 0px 0px 12px 12px
-    margin-left: auto
-    margin-right: auto
+    @include center
     font-family: 'Roboto', sans-serif
 .logo_menu-contact
     padding: 50px 0 0 0
@@ -650,26 +641,31 @@ footer
     direction: row
     align-items: center
     gap: 6px
+@mixin langback
+    border-radius: 8px
+    padding: 5px 7px 5px 7px
 .change-lang-contact
     text-decoration: none
     color: #B3B3BA
-    padding: 5px 7px 5px 7px
-// .default-lang-contact:before
+    @include langback
+// .lang-default
 //     background: #F0145A
-//     border-radius: 8px
-//     padding: 5px 7px 5px 7px
+    @include langback
 .change-lang-contact:hover:focus
     color: #FFFFFF
 .change-lang-contact:focus
     color: #FFFFFF
 .change-lang-contact:focus
     background: #F0145A
-    border-radius: 8px
-    padding: 5px 7px 5px 7px
+    @include langback
 .change-lang-contact:hover
     background: #F5F5FA
-    border-radius: 8px
-    padding: 5px 7px 5px 7px
+    @include langback
+.change-lang-contact.active
+    background-color: #F0145A
+    color: #FFFFFF
+    @include langback
+
 .menu-lang-adress-contact
     list-style-type: none
     display: inline-block
@@ -735,6 +731,7 @@ path:hover
     color: #B3B3BA
 .contact-page
     margin-top: 60px
+    margin-bottom: 60px
     display: flex
     direction: row
     justify-content: center
