@@ -16,9 +16,6 @@ body {
   margin-right: auto;
   font-family: "Roboto", sans-serif; }
 
-.menu {
-  z-index: 1; }
-
 .logo {
   display: flex;
   direction: row;
@@ -41,7 +38,7 @@ body {
 
 .logo_menu_middle {
   display: none; }
-  @media (max-width: 1024px) and (min-width: 596px) {
+  @media (max-width: 1024px) and (min-width: 597px) {
     .logo_menu_middle {
       display: block;
       padding-top: 15px; }
@@ -242,6 +239,9 @@ span {
     .consistent {
       flex-direction: column;
       gap: 15px; } }
+  @media screen and (max-width: 596px) {
+    .consistent {
+      margin-top: 950px; } }
 
 .consistent > ul {
   white-space: nowrap;
