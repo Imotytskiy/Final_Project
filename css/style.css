@@ -643,7 +643,7 @@ h5 {
     .footer-position-middle * {
       margin: 0; }
     .footer-position-middle :last-child {
-      padding-top: 15px;
+      padding-top: 10px;
       margin: 0; } }
 
 @media (min-width: 1101px) {
@@ -653,6 +653,7 @@ h5 {
 footer {
   height: auto;
   background: #F5F5FA;
+  margin-top: 60px;
   padding-bottom: 30px;
   padding-top: 30px; }
 
