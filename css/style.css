@@ -3,7 +3,8 @@
 
 body {
   max-width: 1920px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-family: "Montserrat"; }
 
 @font-face {
   font-family: "Montserrat";
@@ -653,7 +654,6 @@ h5 {
 footer {
   height: auto;
   background: #F5F5FA;
-  margin-top: 60px;
   padding-bottom: 30px;
   padding-top: 30px; }
 
