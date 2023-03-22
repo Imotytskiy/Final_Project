@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/slider.css">
-    <link rel="stylesheet" href="./js/script.js">
+    <script src="./js/script.js"></script>
 </head>
 <body>
     <section class="container">
@@ -21,7 +21,7 @@
             <nav class="menu">
                 <div class="menu-up">
                     <ul>
-                        <li class="menu-lang-adress"><a class="change-lang" href="#">УК</a></li>
+                        <li class="menu-lang-adress"><a class="change-lang default-lang" href="#">УК</a></li>
                         <li class="menu-lang-adress"><a class="change-lang" href="#">РУ</a></li>
                         <li class="menu-lang-adress"><a class="change-lang" href="#">EN</a></li>
                     </ul>
@@ -110,7 +110,7 @@
                 <img srcset="./img/Symbol.svg" alt="…">
             </picture>
             <div class="scroll_red">
-                <a class="button_scroll" href="#"></a>
+                <a class="button_scroll" href="#services"></a>
             </div>
             <div class="headtwo">
                 you legal solutions provider
@@ -583,18 +583,6 @@
             border-radius: 8px; 
         }
     </style>
-    <script>
-        function showIt() {
-            document.getElementById("hid").style.visibility = "visible";
-        }
-        setTimeout("showIt()", 10000); // after 10 seconds
-        let timeoutId = setTimeout("showIt()", 10000); // store the timeout ID in a variable
-
-        function closeIt() {
-            clearTimeout(timeoutId); // clear the timeout to prevent the popup from showing again
-            document.getElementById("hid").style.visibility = "hidden"; // hide the popup
-        }
-    </script>
 </body>
 
 </html>

@@ -741,6 +741,11 @@ footer {
   border-radius: 8px;
   padding: 5px 7px 5px 7px; }
 
+.lang-default::active {
+  background: #F0145A;
+  border-radius: 8px;
+  padding: 5px 7px 5px 7px; }
+
 .change-lang-contact:hover:focus {
   color: #FFFFFF; }
 
@@ -771,7 +776,8 @@ footer {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  align-content: center; }
+  align-content: center;
+  color: #B3B3BA; }
 
 .menu-lang-adress-tel-contact {
   font-weight: 700;
