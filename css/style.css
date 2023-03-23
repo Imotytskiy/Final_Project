@@ -345,7 +345,7 @@ h2 {
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
-  margin-left: 5%;
+  margin-left: 126px;
   font-family: "Montserrat"; }
 
 h3 {
@@ -662,7 +662,9 @@ footer {
   height: auto;
   background: #F5F5FA;
   padding-bottom: 30px;
-  padding-top: 30px; }
+  padding-top: 30px;
+  position: sticky;
+  top: 0; }
 
 .margin60 {
   margin-right: 60px;
