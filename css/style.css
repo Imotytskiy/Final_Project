@@ -345,7 +345,7 @@ h2 {
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
-  margin-left: 126px;
+  margin-left: 5%;
   font-family: "Montserrat"; }
 
 h3 {
@@ -360,8 +360,8 @@ h3 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Montserrat";
-  margin-left: 126px;
-  margin-top: 10px; }
+  margin-left: 5%;
+  margin-top: 5px; }
 
 .cards {
   display: inline-flex;
