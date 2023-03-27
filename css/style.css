@@ -93,6 +93,7 @@ body {
   flex-wrap: nowrap;
   direction: row;
   align-items: center;
+  margin-top: 15px;
   gap: 6px; }
   .menu-up-footer {
     display: flex;
@@ -100,6 +101,7 @@ body {
     direction: row;
     align-items: center;
     gap: 6px;
+    margin-top: 15px;
     margin-right: 60px;
     margin-left: 60px; }
 
@@ -660,10 +662,8 @@ h5 {
 
 footer {
   height: auto;
-  background: #F5F5FA;
-  padding-bottom: 30px;
-  padding-top: 30px;
-  margin-top: 300px; }
+  background-color: #F5F5FA;
+  padding-top: 30px; }
   @media (max-width: 1100px) {
     footer {
       margin-top: 0; } }
